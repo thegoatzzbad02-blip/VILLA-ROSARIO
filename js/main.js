@@ -1,6 +1,6 @@
-// ============================================
-// js/main.js - VERSIÓN MEJORADA Y UNIFICADA
-// ============================================
+// =============================================
+// main.js - VERSIÓN MEJORADA Y UNIFICADA
+// =============================================
 
 (function() {
     // ===== MENÚ ACTIVO (resaltado según la URL actual) =====
@@ -218,6 +218,58 @@
         }
     }
 
+    // ===== MODAL GRANDE PARA FOTOS (PÁGINA HISTORIA) =====
+    function setupHistoriaModal() {
+        const modal = document.getElementById('modalFoto');
+        const modalImg = document.getElementById('modalImg');
+        const closeModal = document.querySelector('.cerrar-modal');
+        
+        if (!modal) return;
+        
+        // Abrir modal al hacer clic en cualquier imagen de la línea de tiempo
+        document.querySelectorAll('.timeline-imagen').forEach(el => {
+            el.addEventListener('click', () => {
+                const imgSrc = el.getAttribute('data-img');
+                if (imgSrc) {
+                    modalImg.src = imgSrc;
+                    modal.style.display = 'flex';
+                }
+            });
+        });
+        
+        // Abrir modal al hacer clic en cualquier imagen de la galería
+        document.querySelectorAll('.galeria-item').forEach(el => {
+            el.addEventListener('click', () => {
+                const imgSrc = el.getAttribute('data-img');
+                if (imgSrc) {
+                    modalImg.src = imgSrc;
+                    modal.style.display = 'flex';
+                }
+            });
+        });
+        
+        // Cerrar modal con botón X
+        if (closeModal) {
+            closeModal.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+        }
+        
+        // Cerrar modal haciendo clic fuera del contenido
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+        
+        // Cerrar con tecla ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.style.display === 'flex') {
+                modal.style.display = 'none';
+            }
+        });
+    }
+
     // ===== INICIALIZACIÓN GENERAL =====
     document.addEventListener('DOMContentLoaded', () => {
         setActiveNavLink();
@@ -226,5 +278,6 @@
         setupShareButtons();
         setupProyectos();
         setupEventos();
+        setupHistoriaModal();
     });
 })();
