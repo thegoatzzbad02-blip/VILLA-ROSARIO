@@ -14,6 +14,7 @@
 
 - [PARTE 1: BIENVENIDA, ENFOQUE METODOLÓGICO Y MAPEO VISUAL](#parte-1-bienvenida-enfoque-metodológico-y-mapeo-visual)
 - [PARTE 2: GUÍA DE INICIO RÁPIDO (5 MINUTOS DE EMERGENCIA)](#parte-2-guía-de-inicio-rápido-5-minutos-de-emergencia)
+- [PARTE 2.5: GUÍA DE COMMITS PARA VOCEROS (GITHUB DESKTOP PASO A PASO)](#parte-25-guía-de-commits-para-voceros-github-desktop-paso-a-paso)
 - [PARTE 3: MANUAL DE USUARIO COMPLETO (SABER QUÉ EDITAR LÍNEA POR LÍNEA)](#parte-3-manual-de-usuario-completo-saber-qué-editar-línea-por-línea)
 - [PARTE 4: HOJA DE TRUCOS Y BANCO DE 15+ PLANTILLAS (COPIAR Y PEGAR)](#parte-4-hoja-de-trucos-y-banco-de-15-plantillas-copiar-y-pegar)
 - [PARTE 5: GUÍA TÉCNICA, GIT Y DESPLIEGUE (GITHUB DESKTOP PASO A PASO)](#parte-5-guía-técnica-git-y-despliegue-github-desktop-paso-a-paso)
@@ -246,6 +247,57 @@ Si la página no se ve bien, vuelve a VS Code y usa `Ctrl + Z`.
 4. Guardar con `Ctrl + S`.
 5. Volver a cargar el navegador con `F5`.
 6. Si hay error, presionar `Ctrl + Z`.
+
+---
+
+# PARTE 2.5: GUÍA DE COMMITS PARA VOCEROS (GITHUB DESKTOP PASO A PASO)
+
+## 2.5.1 ¿Qué es un commit y por qué es importante para la comunidad?
+
+Un **commit** es como una fotografía de la página web en un momento específico. Cada vez que haces un commit, guardas los cambios que hiciste y dejas un registro de lo que cambiaste, quién lo cambió y cuándo. Esto permite:
+- Volver atrás si algo sale mal.
+- Saber quién actualizó una noticia o un servicio.
+- Tener una memoria comunitaria de todas las modificaciones del sitio.
+
+## 2.5.2 Regla de oro de los commits
+
+**Haz un commit cada vez que termines un cambio lógico y funcional.**  
+No acumules muchos cambios sin guardarlos. Si haces un commit después de cada noticia o cada corrección, será más fácil deshacer errores.
+
+## 2.5.3 Flujo correcto para hacer un commit desde GitHub Desktop
+
+1. **Abre GitHub Desktop** y asegúrate de que el repositorio `VILLA-ROSARIO` esté seleccionado.
+2. **Ve a la pestaña "Changes"** (Cambios). Allí verás los archivos que modificaste (aparecen en color azul).
+3. **Escribe un mensaje de commit** en el cuadro de texto **"Summary"** (Resumen). Este mensaje debe ser breve y describir exactamente lo que hiciste.
+4. **Haz clic en el botón azul "Commit to main"** (Confirmar en la rama principal).
+5. **Luego, haz clic en "Push origin"** (Enviar a la nube). Esto sube los cambios a GitHub y luego a la página web en vivo.
+
+## 2.5.4 Ejemplos de buenos mensajes de commit
+
+| Tipo de cambio | Mensaje de commit correcto | Mensaje incorrecto |
+|----------------|----------------------------|--------------------|
+| Noticia nueva | "Agregar noticia sobre corte de agua" | "cambios" |
+| Alerta urgente | "Actualizar alerta roja de electricidad" | "update" |
+| Estado de servicio | "Cambiar estado de agua a 'Malo'" | "modificar servicio" |
+| Corrección de error | "Corregir fecha de evento del 25 de abril" | "arreglo" |
+| Nuevo emprendedor | "Agregar perfil de emprendedor 'Panadería Dulce Sabilar'" | "nuevo" |
+
+**Recuerda:** Usa verbos en pasado simple o infinitivo. Sé específico. No dejes el mensaje en blanco.
+
+## 2.5.5 Qué hacer si te equivocas en un commit
+
+- **Si aún no hiciste "Push origin"** (solo commit local): En GitHub Desktop, ve a la pestaña "History", haz clic derecho sobre el último commit y selecciona "Undo commit". Luego corrige los archivos y repite el commit.
+- **Si ya hiciste Push**: Pide ayuda al equipo UPTOS o a otro vocero con experiencia. No intentes revertir por tu cuenta si no estás seguro.
+
+## 2.5.6 Cómo revisar el historial de commits (para ver quién hizo qué)
+
+En GitHub Desktop, haz clic en la pestaña **"History"** (Historial). Allí aparecen todos los commits ordenados por fecha, con el mensaje, el autor y los archivos cambiados. Si necesitas recuperar un texto antiguo, selecciona un commit anterior, copia el contenido y pégalo en tu archivo actual.
+
+## 2.5.7 Imagen de referencia (para entender mejor)
+
+*(Aquí puedes insertar una captura de pantalla de GitHub Desktop mostrando la pestaña "Changes" y el botón "Commit to main". Si no tienes la imagen, escribe una nota: "Ver Anexo X del proyecto para ejemplo visual".)*
+
+<!-- Agregado por solicitud del usuario: Guía de commits para voceros (junio 2026) -->
 
 ---
 
