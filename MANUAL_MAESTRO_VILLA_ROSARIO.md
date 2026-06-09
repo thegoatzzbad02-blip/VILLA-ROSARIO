@@ -3,10 +3,8 @@
 
 **Proyecto de Vinculación Sociotecnológica:** Desarrollo de la Plataforma Web para el Consejo Comunal de Villa Rosario
 **Elaborado por:** Equipo de Investigadores y Desarrolladores (UPTOS)
-**Versión:** 1.0 Maestro
 **Fecha de Entrega:** Junio 2026
 **Destinatarios:** Voceros y Voceras del Consejo Comunal, Administradores del Sitio, Comunidad de Villa Rosario
-**Estado:** Documento de Transferencia Tecnológica Total y Autocontenido
 
 ---
 
